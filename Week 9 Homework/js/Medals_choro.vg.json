@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Medals per athlete by Country",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "js/ne_110m_admin_0_countries.topojson",
+    "format": {
+          "type": "topojson",
+          "feature": "ne_110m_admin_0_countries"
+        }
+  },
+  "transform": [{
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "data/testing.csv"
+        },
+        "key": "Country",
+        "fields": ["Medals", "Num"]
+      }
+    },
+    {"calculate": "datum.Medals/datum.Num", "as": "Medal Proportion"}
+  ],
+  "projection": {
+    "type": "equirectangular"
+  },
+  "mark": {
+    "type": "geoshape"
+    },
+  "encoding": {
+    "color": {
+      "field": "Medal Proportion",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "Medal Proportion", "type": "quantitative"}
+    ]
+  }
+
+}

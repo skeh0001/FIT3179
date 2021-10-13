@@ -1,0 +1,625 @@
+"","Country","Medal","Count"
+"1","Afghanistan","Bronze",2
+"2","Afghanistan","Silver",0
+"3","Afghanistan","Gold",0
+"4","Albania","Bronze",0
+"5","Albania","Silver",0
+"6","Albania","Gold",0
+"7","Algeria","Bronze",8
+"8","Algeria","Silver",4
+"9","Algeria","Gold",5
+"10","American Samoa","Bronze",0
+"11","American Samoa","Silver",0
+"12","American Samoa","Gold",0
+"13","Andorra","Bronze",0
+"14","Andorra","Silver",0
+"15","Andorra","Gold",0
+"16","Angola","Bronze",0
+"17","Angola","Silver",0
+"18","Angola","Gold",0
+"19","Antigua","Bronze",0
+"20","Antigua","Silver",0
+"21","Antigua","Gold",0
+"22","Argentina","Bronze",91
+"23","Argentina","Silver",92
+"24","Argentina","Gold",91
+"25","Armenia","Bronze",9
+"26","Armenia","Silver",5
+"27","Armenia","Gold",2
+"28","Aruba","Bronze",0
+"29","Aruba","Silver",0
+"30","Aruba","Gold",0
+"31","Australia","Bronze",522
+"32","Australia","Silver",459
+"33","Australia","Gold",368
+"34","Austria","Bronze",156
+"35","Austria","Silver",186
+"36","Austria","Gold",108
+"37","Azerbaijan","Bronze",25
+"38","Azerbaijan","Silver",12
+"39","Azerbaijan","Gold",7
+"40","Bahamas","Bronze",15
+"41","Bahamas","Silver",11
+"42","Bahamas","Gold",14
+"43","Bahrain","Bronze",1
+"44","Bahrain","Silver",1
+"45","Bahrain","Gold",1
+"46","Bangladesh","Bronze",0
+"47","Bangladesh","Silver",0
+"48","Bangladesh","Gold",0
+"49","Barbados","Bronze",1
+"50","Barbados","Silver",0
+"51","Barbados","Gold",0
+"52","Belarus","Bronze",71
+"53","Belarus","Silver",44
+"54","Belarus","Gold",24
+"55","Belgium","Bronze",173
+"56","Belgium","Silver",197
+"57","Belgium","Gold",98
+"58","Belize","Bronze",0
+"59","Belize","Silver",0
+"60","Belize","Gold",0
+"61","Benin","Bronze",0
+"62","Benin","Silver",0
+"63","Benin","Gold",0
+"64","Bermuda","Bronze",1
+"65","Bermuda","Silver",0
+"66","Bermuda","Gold",0
+"67","Bhutan","Bronze",0
+"68","Bhutan","Silver",0
+"69","Bhutan","Gold",0
+"70","Bolivia","Bronze",0
+"71","Bolivia","Silver",0
+"72","Bolivia","Gold",0
+"73","Bosnia and Herz.","Bronze",0
+"74","Bosnia and Herz.","Silver",0
+"75","Bosnia and Herz.","Gold",0
+"76","Botswana","Bronze",0
+"77","Botswana","Silver",1
+"78","Botswana","Gold",0
+"79","Brazil","Bronze",191
+"80","Brazil","Silver",175
+"81","Brazil","Gold",109
+"82","Brunei","Bronze",0
+"83","Brunei","Silver",0
+"84","Brunei","Gold",0
+"85","Bulgaria","Bronze",144
+"86","Bulgaria","Silver",144
+"87","Bulgaria","Gold",54
+"88","Burkina Faso","Bronze",0
+"89","Burkina Faso","Silver",0
+"90","Burkina Faso","Gold",0
+"91","Burundi","Bronze",0
+"92","Burundi","Silver",1
+"93","Burundi","Gold",1
+"94","Cambodia","Bronze",0
+"95","Cambodia","Silver",0
+"96","Cambodia","Gold",0
+"97","Cameroon","Bronze",1
+"98","Cameroon","Silver",1
+"99","Cameroon","Gold",20
+"100","Canada","Bronze",451
+"101","Canada","Silver",438
+"102","Canada","Gold",463
+"103","Cape Verde","Bronze",0
+"104","Cape Verde","Silver",0
+"105","Cape Verde","Gold",0
+"106","Cayman Islands","Bronze",0
+"107","Cayman Islands","Silver",0
+"108","Cayman Islands","Gold",0
+"109","Central African Rep.","Bronze",0
+"110","Central African Rep.","Silver",0
+"111","Central African Rep.","Gold",0
+"112","Chad","Bronze",0
+"113","Chad","Silver",0
+"114","Chad","Gold",0
+"115","Chile","Bronze",20
+"116","Chile","Silver",9
+"117","Chile","Gold",3
+"118","China","Bronze",293
+"119","China","Silver",349
+"120","China","Gold",351
+"121","Colombia","Bronze",14
+"122","Colombia","Silver",9
+"123","Colombia","Gold",5
+"124","Comoros","Bronze",0
+"125","Comoros","Silver",0
+"126","Comoros","Gold",0
+"127","Congo","Bronze",0
+"128","Congo","Silver",0
+"129","Congo","Gold",0
+"130","Cook Islands","Bronze",0
+"131","Cook Islands","Silver",0
+"132","Cook Islands","Gold",0
+"133","Costa Rica","Bronze",2
+"134","Costa Rica","Silver",1
+"135","Costa Rica","Gold",1
+"136","Côte d'Ivoire","Bronze",1
+"137","Côte d'Ivoire","Silver",1
+"138","Côte d'Ivoire","Gold",1
+"139","Croatia","Bronze",37
+"140","Croatia","Silver",54
+"141","Croatia","Gold",58
+"142","Cuba","Bronze",116
+"143","Cuba","Silver",129
+"144","Cuba","Gold",164
+"145","Curacao","Bronze",0
+"146","Curacao","Silver",1
+"147","Curacao","Gold",0
+"148","Cyprus","Bronze",0
+"149","Cyprus","Silver",1
+"150","Cyprus","Gold",0
+"151","Czech Republic","Bronze",248
+"152","Czech Republic","Silver",261
+"153","Czech Republic","Gold",123
+"154","Czechia","Bronze",11
+"155","Czechia","Silver",1
+"156","Czechia","Gold",0
+"157","Dem. Rep. Congo","Bronze",0
+"158","Dem. Rep. Congo","Silver",0
+"159","Dem. Rep. Congo","Gold",0
+"160","Denmark","Bronze",177
+"161","Denmark","Silver",241
+"162","Denmark","Gold",179
+"163","Djibouti","Bronze",1
+"164","Djibouti","Silver",0
+"165","Djibouti","Gold",0
+"166","Dominica","Bronze",0
+"167","Dominica","Silver",0
+"168","Dominica","Gold",0
+"169","Dominican Rep.","Bronze",2
+"170","Dominican Rep.","Silver",2
+"171","Dominican Rep.","Gold",3
+"172","Ecuador","Bronze",0
+"173","Ecuador","Silver",1
+"174","Ecuador","Gold",1
+"175","Egypt","Bronze",12
+"176","Egypt","Silver",8
+"177","Egypt","Gold",7
+"178","El Salvador","Bronze",0
+"179","El Salvador","Silver",0
+"180","El Salvador","Gold",0
+"181","Equatorial Guinea","Bronze",0
+"182","Equatorial Guinea","Silver",0
+"183","Equatorial Guinea","Gold",0
+"184","Eritrea","Bronze",1
+"185","Eritrea","Silver",0
+"186","Eritrea","Gold",0
+"187","Estonia","Bronze",25
+"188","Estonia","Silver",12
+"189","Estonia","Gold",13
+"190","eSwatini","Bronze",0
+"191","eSwatini","Silver",0
+"192","eSwatini","Gold",0
+"193","Ethiopia","Bronze",22
+"194","Ethiopia","Silver",9
+"195","Ethiopia","Gold",22
+"196","Fiji","Bronze",0
+"197","Fiji","Silver",0
+"198","Fiji","Gold",13
+"199","Finland","Bronze",432
+"200","Finland","Silver",270
+"201","Finland","Gold",198
+"202","France","Bronze",666
+"203","France","Silver",610
+"204","France","Gold",501
+"205","Gabon","Bronze",0
+"206","Gabon","Silver",1
+"207","Gabon","Gold",0
+"208","Gambia","Bronze",0
+"209","Gambia","Silver",0
+"210","Gambia","Gold",0
+"211","Georgia","Bronze",18
+"212","Georgia","Silver",6
+"213","Georgia","Gold",8
+"214","Germany","Bronze",1260
+"215","Germany","Silver",1195
+"216","Germany","Gold",1301
+"217","Ghana","Bronze",22
+"218","Ghana","Silver",1
+"219","Ghana","Gold",0
+"220","Greece","Bronze",84
+"221","Greece","Silver",109
+"222","Greece","Gold",62
+"223","Grenada","Bronze",0
+"224","Grenada","Silver",1
+"225","Grenada","Gold",1
+"226","Guam","Bronze",0
+"227","Guam","Silver",0
+"228","Guam","Gold",0
+"229","Guatemala","Bronze",0
+"230","Guatemala","Silver",1
+"231","Guatemala","Gold",0
+"232","Guinea","Bronze",0
+"233","Guinea","Silver",0
+"234","Guinea","Gold",0
+"235","Guinea-Bissau","Bronze",0
+"236","Guinea-Bissau","Silver",0
+"237","Guinea-Bissau","Gold",0
+"238","Guyana","Bronze",1
+"239","Guyana","Silver",0
+"240","Guyana","Gold",0
+"241","Haiti","Bronze",5
+"242","Haiti","Silver",1
+"243","Haiti","Gold",1
+"244","Honduras","Bronze",0
+"245","Honduras","Silver",0
+"246","Honduras","Gold",0
+"247","Hungary","Bronze",371
+"248","Hungary","Silver",332
+"249","Hungary","Gold",432
+"250","Iceland","Bronze",2
+"251","Iceland","Silver",15
+"252","Iceland","Gold",0
+"253","India","Bronze",40
+"254","India","Silver",19
+"255","India","Gold",138
+"256","Individual Olympic Athletes","Bronze",3
+"257","Individual Olympic Athletes","Silver",1
+"258","Individual Olympic Athletes","Gold",1
+"259","Indonesia","Bronze",13
+"260","Indonesia","Silver",17
+"261","Indonesia","Gold",11
+"262","Iran","Bronze",29
+"263","Iran","Silver",21
+"264","Iran","Gold",18
+"265","Iraq","Bronze",1
+"266","Iraq","Silver",0
+"267","Iraq","Gold",0
+"268","Ireland","Bronze",13
+"269","Ireland","Silver",13
+"270","Ireland","Gold",9
+"271","Israel","Bronze",7
+"272","Israel","Silver",1
+"273","Israel","Gold",1
+"274","Italy","Bronze",531
+"275","Italy","Silver",531
+"276","Italy","Gold",575
+"277","Jamaica","Bronze",44
+"278","Jamaica","Silver",75
+"279","Jamaica","Gold",38
+"280","Japan","Bronze",357
+"281","Japan","Silver",309
+"282","Japan","Gold",247
+"283","Jordan","Bronze",0
+"284","Jordan","Silver",0
+"285","Jordan","Gold",1
+"286","Kazakhstan","Bronze",32
+"287","Kazakhstan","Silver",25
+"288","Kazakhstan","Gold",20
+"289","Kenya","Bronze",31
+"290","Kenya","Silver",41
+"291","Kenya","Gold",34
+"292","Kiribati","Bronze",0
+"293","Kiribati","Silver",0
+"294","Kiribati","Gold",0
+"295","Kosovo","Bronze",0
+"296","Kosovo","Silver",0
+"297","Kosovo","Gold",1
+"298","Kuwait","Bronze",2
+"299","Kuwait","Silver",0
+"300","Kuwait","Gold",0
+"301","Kyrgyzstan","Bronze",2
+"302","Kyrgyzstan","Silver",1
+"303","Kyrgyzstan","Gold",0
+"304","Laos","Bronze",0
+"305","Laos","Silver",0
+"306","Laos","Gold",0
+"307","Latvia","Bronze",13
+"308","Latvia","Silver",19
+"309","Latvia","Gold",3
+"310","Lebanon","Bronze",2
+"311","Lebanon","Silver",2
+"312","Lebanon","Gold",0
+"313","Lesotho","Bronze",0
+"314","Lesotho","Silver",0
+"315","Lesotho","Gold",0
+"316","Liberia","Bronze",0
+"317","Liberia","Silver",0
+"318","Liberia","Gold",0
+"319","Libya","Bronze",0
+"320","Libya","Silver",0
+"321","Libya","Gold",0
+"322","Liechtenstein","Bronze",5
+"323","Liechtenstein","Silver",2
+"324","Liechtenstein","Gold",2
+"325","Lithuania","Bronze",48
+"326","Lithuania","Silver",7
+"327","Lithuania","Gold",6
+"328","Luxembourg","Bronze",0
+"329","Luxembourg","Silver",4
+"330","Luxembourg","Gold",4
+"331","Macedonia","Bronze",1
+"332","Macedonia","Silver",0
+"333","Macedonia","Gold",0
+"334","Madagascar","Bronze",0
+"335","Madagascar","Silver",0
+"336","Madagascar","Gold",0
+"337","Malawi","Bronze",0
+"338","Malawi","Silver",0
+"339","Malawi","Gold",0
+"340","Malaysia","Bronze",5
+"341","Malaysia","Silver",11
+"342","Malaysia","Gold",0
+"343","Maldives","Bronze",0
+"344","Maldives","Silver",0
+"345","Maldives","Gold",0
+"346","Mali","Bronze",0
+"347","Mali","Silver",0
+"348","Mali","Gold",0
+"349","Malta","Bronze",0
+"350","Malta","Silver",0
+"351","Malta","Gold",0
+"352","Marshall Islands","Bronze",0
+"353","Marshall Islands","Silver",0
+"354","Marshall Islands","Gold",0
+"355","Mauritania","Bronze",0
+"356","Mauritania","Silver",0
+"357","Mauritania","Gold",0
+"358","Mauritius","Bronze",1
+"359","Mauritius","Silver",0
+"360","Mauritius","Gold",0
+"361","Mexico","Bronze",54
+"362","Mexico","Silver",26
+"363","Mexico","Gold",30
+"364","Micronesia","Bronze",0
+"365","Micronesia","Silver",0
+"366","Micronesia","Gold",0
+"367","Moldova","Bronze",5
+"368","Moldova","Silver",3
+"369","Moldova","Gold",0
+"370","Monaco","Bronze",1
+"371","Monaco","Silver",0
+"372","Monaco","Gold",0
+"373","Mongolia","Bronze",14
+"374","Mongolia","Silver",10
+"375","Mongolia","Gold",2
+"376","Montenegro","Bronze",0
+"377","Montenegro","Silver",14
+"378","Montenegro","Gold",0
+"379","Morocco","Bronze",12
+"380","Morocco","Silver",5
+"381","Morocco","Gold",6
+"382","Mozambique","Bronze",1
+"383","Mozambique","Silver",0
+"384","Mozambique","Gold",1
+"385","Myanmar","Bronze",0
+"386","Myanmar","Silver",0
+"387","Myanmar","Gold",0
+"388","Namibia","Bronze",0
+"389","Namibia","Silver",4
+"390","Namibia","Gold",0
+"391","Nauru","Bronze",0
+"392","Nauru","Silver",0
+"393","Nauru","Gold",0
+"394","Nepal","Bronze",0
+"395","Nepal","Silver",0
+"396","Nepal","Gold",1
+"397","Netherlands","Bronze",413
+"398","Netherlands","Silver",340
+"399","Netherlands","Gold",287
+"400","New Zealand","Bronze",82
+"401","New Zealand","Silver",56
+"402","New Zealand","Gold",90
+"403","Nicaragua","Bronze",0
+"404","Nicaragua","Silver",0
+"405","Nicaragua","Gold",0
+"406","Niger","Bronze",1
+"407","Niger","Silver",1
+"408","Niger","Gold",0
+"409","Nigeria","Bronze",46
+"410","Nigeria","Silver",30
+"411","Nigeria","Gold",23
+"412","North Korea","Bronze",35
+"413","North Korea","Silver",16
+"414","North Korea","Gold",16
+"415","Norway","Bronze",294
+"416","Norway","Silver",361
+"417","Norway","Gold",378
+"418","Oman","Bronze",0
+"419","Oman","Silver",0
+"420","Oman","Gold",0
+"421","Pakistan","Bronze",34
+"422","Pakistan","Silver",45
+"423","Pakistan","Gold",42
+"424","Palau","Bronze",0
+"425","Palau","Silver",0
+"426","Palau","Gold",0
+"427","Palestine","Bronze",0
+"428","Palestine","Silver",0
+"429","Palestine","Gold",0
+"430","Panama","Bronze",2
+"431","Panama","Silver",0
+"432","Panama","Gold",1
+"433","Papua New Guinea","Bronze",0
+"434","Papua New Guinea","Silver",0
+"435","Papua New Guinea","Gold",0
+"436","Paraguay","Bronze",0
+"437","Paraguay","Silver",17
+"438","Paraguay","Gold",0
+"439","Peru","Bronze",0
+"440","Peru","Silver",14
+"441","Peru","Gold",1
+"442","Philippines","Bronze",7
+"443","Philippines","Silver",3
+"444","Philippines","Gold",0
+"445","Poland","Bronze",253
+"446","Poland","Silver",195
+"447","Poland","Gold",117
+"448","Portugal","Bronze",26
+"449","Portugal","Silver",11
+"450","Portugal","Gold",4
+"451","Puerto Rico","Bronze",6
+"452","Puerto Rico","Silver",2
+"453","Puerto Rico","Gold",1
+"454","Qatar","Bronze",4
+"455","Qatar","Silver",1
+"456","Qatar","Gold",0
+"457","Romania","Bronze",292
+"458","Romania","Silver",200
+"459","Romania","Gold",161
+"460","Russia","Bronze",1178
+"461","Russia","Silver",1170
+"462","Russia","Gold",1599
+"463","Rwanda","Bronze",0
+"464","Rwanda","Silver",0
+"465","Rwanda","Gold",0
+"466","S. Sudan","Bronze",0
+"467","S. Sudan","Silver",0
+"468","S. Sudan","Gold",0
+"469","Saint Kitts","Bronze",0
+"470","Saint Kitts","Silver",0
+"471","Saint Kitts","Gold",0
+"472","Saint Lucia","Bronze",0
+"473","Saint Lucia","Silver",0
+"474","Saint Lucia","Gold",0
+"475","Saint Vincent","Bronze",0
+"476","Saint Vincent","Silver",0
+"477","Saint Vincent","Gold",0
+"478","Samoa","Bronze",0
+"479","Samoa","Silver",0
+"480","Samoa","Gold",0
+"481","San Marino","Bronze",0
+"482","San Marino","Silver",0
+"483","San Marino","Gold",0
+"484","Sao Tome and Principe","Bronze",0
+"485","Sao Tome and Principe","Silver",0
+"486","Sao Tome and Principe","Gold",0
+"487","Saudi Arabia","Bronze",5
+"488","Saudi Arabia","Silver",1
+"489","Saudi Arabia","Gold",0
+"490","Senegal","Bronze",0
+"491","Senegal","Silver",1
+"492","Senegal","Gold",0
+"493","Serbia","Bronze",160
+"494","Serbia","Silver",222
+"495","Serbia","Gold",157
+"496","Seychelles","Bronze",0
+"497","Seychelles","Silver",0
+"498","Seychelles","Gold",0
+"499","Sierra Leone","Bronze",0
+"500","Sierra Leone","Silver",0
+"501","Sierra Leone","Gold",0
+"502","Singapore","Bronze",4
+"503","Singapore","Silver",4
+"504","Singapore","Gold",1
+"505","Slovakia","Bronze",13
+"506","Slovakia","Silver",19
+"507","Slovakia","Gold",15
+"508","Slovenia","Bronze",27
+"509","Slovenia","Silver",13
+"510","Slovenia","Gold",8
+"511","Solomon Islands","Bronze",0
+"512","Solomon Islands","Silver",0
+"513","Solomon Islands","Gold",0
+"514","Somalia","Bronze",0
+"515","Somalia","Silver",0
+"516","Somalia","Gold",0
+"517","South Africa","Bronze",52
+"518","South Africa","Silver",47
+"519","South Africa","Gold",32
+"520","South Korea","Bronze",185
+"521","South Korea","Silver",232
+"522","South Korea","Gold",221
+"523","Spain","Bronze",136
+"524","Spain","Silver",243
+"525","Spain","Gold",110
+"526","Sri Lanka","Bronze",0
+"527","Sri Lanka","Silver",2
+"528","Sri Lanka","Gold",0
+"529","Sudan","Bronze",0
+"530","Sudan","Silver",1
+"531","Sudan","Gold",0
+"532","Suriname","Bronze",1
+"533","Suriname","Silver",0
+"534","Suriname","Gold",1
+"535","Sweden","Bronze",535
+"536","Sweden","Silver",522
+"537","Sweden","Gold",479
+"538","Switzerland","Bronze",268
+"539","Switzerland","Silver",248
+"540","Switzerland","Gold",175
+"541","Syria","Bronze",2
+"542","Syria","Silver",2
+"543","Syria","Gold",1
+"544","Taiwan","Bronze",18
+"545","Taiwan","Silver",28
+"546","Taiwan","Gold",3
+"547","Tajikistan","Bronze",2
+"548","Tajikistan","Silver",1
+"549","Tajikistan","Gold",1
+"550","Tanzania","Bronze",0
+"551","Tanzania","Silver",2
+"552","Tanzania","Gold",0
+"553","Thailand","Bronze",13
+"554","Thailand","Silver",8
+"555","Thailand","Gold",9
+"556","Timor-Leste","Bronze",0
+"557","Timor-Leste","Silver",0
+"558","Timor-Leste","Gold",0
+"559","Togo","Bronze",1
+"560","Togo","Silver",0
+"561","Togo","Gold",0
+"562","Tonga","Bronze",0
+"563","Tonga","Silver",1
+"564","Tonga","Gold",0
+"565","Trinidad","Bronze",22
+"566","Trinidad","Silver",8
+"567","Trinidad","Gold",7
+"568","Tunisia","Bronze",7
+"569","Tunisia","Silver",3
+"570","Tunisia","Gold",3
+"571","Turkey","Bronze",28
+"572","Turkey","Silver",27
+"573","Turkey","Gold",40
+"574","Turkmenistan","Bronze",0
+"575","Turkmenistan","Silver",0
+"576","Turkmenistan","Gold",0
+"577","Uganda","Bronze",2
+"578","Uganda","Silver",3
+"579","Uganda","Gold",2
+"580","Ukraine","Bronze",100
+"581","Ukraine","Silver",52
+"582","Ukraine","Gold",47
+"583","United Arab Emirates","Bronze",1
+"584","United Arab Emirates","Silver",0
+"585","United Arab Emirates","Gold",1
+"586","United Kingdom","Bronze",651
+"587","United Kingdom","Silver",739
+"588","United Kingdom","Gold",678
+"589","United States of America","Bronze",1358
+"590","United States of America","Silver",1641
+"591","United States of America","Gold",2638
+"592","Uruguay","Bronze",30
+"593","Uruguay","Silver",2
+"594","Uruguay","Gold",31
+"595","Uzbekistan","Bronze",17
+"596","Uzbekistan","Silver",7
+"597","Uzbekistan","Gold",10
+"598","Vanuatu","Bronze",0
+"599","Vanuatu","Silver",0
+"600","Vanuatu","Gold",0
+"601","Venezuela","Bronze",10
+"602","Venezuela","Silver",3
+"603","Venezuela","Gold",2
+"604","Vietnam","Bronze",0
+"605","Vietnam","Silver",3
+"606","Vietnam","Gold",1
+"607","Virgin Islands, British","Bronze",0
+"608","Virgin Islands, British","Silver",0
+"609","Virgin Islands, British","Gold",0
+"610","Virgin Islands, US","Bronze",0
+"611","Virgin Islands, US","Silver",1
+"612","Virgin Islands, US","Gold",0
+"613","Yemen","Bronze",0
+"614","Yemen","Silver",0
+"615","Yemen","Gold",0
+"616","Zambia","Bronze",1
+"617","Zambia","Silver",1
+"618","Zambia","Gold",0
+"619","Zimbabwe","Bronze",1
+"620","Zimbabwe","Silver",4
+"621","Zimbabwe","Gold",17
+"622",NA,"Bronze",0
+"623",NA,"Silver",0
+"624",NA,"Gold",0

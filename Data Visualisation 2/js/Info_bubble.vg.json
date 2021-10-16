@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 600,
+  "width": 1000,
   "height": 600,
   "title": "Average Weight, Height, and Age of atheletes in Olympic events from 1896 to 2016",
   "data": {
@@ -188,7 +188,7 @@
       "params": [
           {
               "name": "sport_highlight",
-              "select": {"type": "point", "fields": ["Sport"]},
+              "select": {"type": "point", "on": "mouseover", "fields": ["Sport"]},
               "bind": "legend"
           },
           {
@@ -216,7 +216,7 @@
         },
         "opacity": {
             "condition": {"param": "sport_highlight", "value": 0.8},
-            "value": 0.2
+            "value": 0.15
         },
         "tooltip": [
           {"field": "Event", "type": "nominal"},

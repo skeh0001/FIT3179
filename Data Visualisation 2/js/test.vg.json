@@ -1,0 +1,252 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 600,
+    "title": "Olympics",
+    "data": {
+      "url": "data/ave_sports.csv"
+    },
+    "params": [
+      {
+        "name": "ol_year",
+        "value": 2016,
+        "bind": {
+          "input": "range",
+          "min": 1896,
+          "max": 2016,
+          "step": 2,
+          "name": "Olympic Year: "
+        }
+      },
+      {
+          "name": "sport_select",
+          "bind": {
+              "input": "select",
+              "options": [
+                  null,
+                  "Aeronautics",
+                  "Alpine Skiing",
+                  "Alpinism",
+                  "Archery",
+                  "Art Competitions",
+                  "Athletics",
+                  "Badminton",
+                  "Baseball",
+                  "Basketball",
+                  "Basque Pelota",
+                  "Beach Volleyball",
+                  "Biathlon",
+                  "Bobsleigh",
+                  "Boxing",
+                  "Canoeing",
+                  "Cricket",
+                  "Croquet",
+                  "Cross Country Skiing",
+                  "Curling",
+                  "Cycling",
+                  "Diving",
+                  "Equestrianism",
+                  "Fencing",
+                  "Figure Skating",
+                  "Football",
+                  "Freestyle Skiing",
+                  "Golf",
+                  "Gymnastics",
+                  "Handball",
+                  "Hockey",
+                  "Ice Hockey",
+                  "Jeu De Paume",
+                  "Judo",
+                  "Lacrosse",
+                  "Luge",
+                  "Military Ski Patrol",
+                  "Modern Pentathlon",
+                  "Motorboating",
+                  "Nordic Combined",
+                  "Polo",
+                  "Racquets",
+                  "Rhythmic Gymnastics",
+                  "Roque",
+                  "Rowing",
+                  "Rugby",
+                  "Rugby Sevens",
+                  "Sailing",
+                  "Shooting",
+                  "Short Track Speed Skating",
+                  "Skeleton",
+                  "Ski Jumping",
+                  "Snowboarding",
+                  "Softball",
+                  "Speed Skating",
+                  "Swimming",
+                  "Synchronized Swimming",
+                  "Table Tennis",
+                  "Taekwondo",
+                  "Tennis",
+                  "Trampolining",
+                  "Triathlon",
+                  "Tug-Of-War",
+                  "Volleyball",
+                  "Water Polo",
+                  "Weightlifting",
+                  "Wrestling"
+              ],
+              "labels": [
+                "Show All",
+                "Aeronautics",
+                "Alpine Skiing",
+                "Alpinism",
+                "Archery",
+                "Art Competitions",
+                "Athletics",
+                "Badminton",
+                "Baseball",
+                "Basketball",
+                "Basque Pelota",
+                "Beach Volleyball",
+                "Biathlon",
+                "Bobsleigh",
+                "Boxing",
+                "Canoeing",
+                "Cricket",
+                "Croquet",
+                "Cross Country Skiing",
+                "Curling",
+                "Cycling",
+                "Diving",
+                "Equestrianism",
+                "Fencing",
+                "Figure Skating",
+                "Football",
+                "Freestyle Skiing",
+                "Golf",
+                "Gymnastics",
+                "Handball",
+                "Hockey",
+                "Ice Hockey",
+                "Jeu De Paume",
+                "Judo",
+                "Lacrosse",
+                "Luge",
+                "Military Ski Patrol",
+                "Modern Pentathlon",
+                "Motorboating",
+                "Nordic Combined",
+                "Polo",
+                "Racquets",
+                "Rhythmic Gymnastics",
+                "Roque",
+                "Rowing",
+                "Rugby",
+                "Rugby Sevens",
+                "Sailing",
+                "Shooting",
+                "Short Track Speed Skating",
+                "Skeleton",
+                "Ski Jumping",
+                "Snowboarding",
+                "Softball",
+                "Speed Skating",
+                "Swimming",
+                "Synchronized Swimming",
+                "Table Tennis",
+                "Taekwondo",
+                "Tennis",
+                "Trampolining",
+                "Triathlon",
+                "Tug-Of-War",
+                "Volleyball",
+                "Water Polo",
+                "Weightlifting",
+                "Wrestling"
+              ],
+              "name": "Sport Selection: "
+          }
+      }
+    ],
+    "transform": [
+      {"filter": "datum.Year == ol_year"},
+      {"filter": "sport_select == null || datum.Sport == sport_select"}
+    ],
+    "encoding": {
+      "x": {
+        "field": "Height",
+        "type": "quantitative",
+        "scale": {"zero": false},
+        "title": "Average Height"
+      },
+      "y": {
+        "field": "Weight",
+        "type": "quantitative",
+        "scale": {"zero": false},
+        "title": "Average Weight"
+      }
+    },
+    "layer": [
+      {
+        "params": [
+            {
+                "name": "sport_highlight",
+                "select": {"type": "point", "fields": ["Sport"]},
+                "bind": "legend"
+            },
+            {
+                "name": "grid",
+                "select": "interval",
+                "bind": "scales"
+            }
+        ],
+        "mark": {"type": "circle", "stroke": "white", "strokeWidth": 1},
+        "encoding": {
+          "size": {
+            "field": "Age",
+            "type": "quantitative",
+            "scale": {
+              "type": "threshold",
+              "domain": [15, 20, 25, 30, 35],
+              "range": [25, 50, 150, 300, 450, 600]
+            },
+            "legend": {"format": ".2s"},
+            "title": "Average Age"
+          },
+          "color": {
+            "field": "Sport",
+            "type": "nominal"
+          },
+          "opacity": {
+              "condition": {"param": "sport_highlight", "value": 0.8},
+              "value": 0.2
+          },
+          "tooltip": [
+            {"field": "Event", "type": "nominal"},
+            {"field": "Sport", "type": "nominal"},
+            {"field": "Height", "type": "quantitative", "format": ".3s"},
+            {"field": "Weight", "type": "quantitative", "format": ".3s"},
+            {"field": "Age", "type": "quantitative", "format": ".3s"},
+            {"field": "City", "type": "nominal"}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "middle",
+          "dx": -12,
+          "fontSize": 11.5,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"field": "Sport", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity": {
+            "condition": {
+              "test": "datum['Sport'] == 'Archery' || datum['Sport'] == 'Swimming' || datum['Sport'] == 'Tennis'",
+              "value": 1
+            },
+            "value": 0
+          }
+        }
+      }
+    ]
+  }

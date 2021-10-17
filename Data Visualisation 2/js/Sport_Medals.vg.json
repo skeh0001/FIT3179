@@ -207,7 +207,8 @@
                 ]
             }
         }
-    ]
+    ],
+    "config": {"background": "#e7e3d5"}
     
   }
   

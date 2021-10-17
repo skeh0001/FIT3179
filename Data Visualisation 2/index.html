@@ -18,7 +18,12 @@
 
     <div class="pure-u-3-4">
       <div id="text_title">
-        <h1>Olympic athletes, sports, and results</h1>
+        <h1><a class="o1" href="#Introduction">Olympic</a> 
+          <a class="o2" href="#Athletes">athletes,</a> 
+          <a class="o3" href="#Results">results,</a> 
+          <span class="o4">and</span> 
+          <a class="o5" href="#Sports">sports</a>
+        </h1>
         <h2>From 1896 (Athens) to 2016 (Rio)</h2>
         <h3>FIT3179 Assignment 2 by Sean Rong Keh 30615089</h3>
       </div>
@@ -32,9 +37,9 @@
 
     <div class="pure-u-1">
       <div id="text_intro">
-        <h3>
-          Introduction
-        </h3>
+        <h2 class='o1'>
+          <a id="Introduction">Introduction</a>
+        </h2>
 
         <p>
           The Olympics, otherwise known as the Olympic Games, are international sporting events that include both 
@@ -48,20 +53,21 @@
         </p>
 
         <p>
-          This visualisation will explore how the Weight, Height, and Age are distributed across different events
-          and sports, as well as visualisation how these trends have developed over Olympic history. The number of
+          This visualisation will identify how the Weight, Height, and Age are distributed across different events
+          and sports, as well as visualise how these trends have developed over Olympic history. The number of
           medals that a typical athlete from each Country wins in the Olympics can also be identified, along with
           the total number of medals of each type won by each country. Lastly, the relationship between winning
-          each type of medal, against their Weight, Height, and Age can be explored. 
+          each type of medal in each sport, against Weight, Height, and Age of athletes will be shown. 
         </p>
       </div>
     </div>
 
     <div class="pure-u-1">
       <div id="text_bubble">
-        <h3>
-          How physical characteristics of Olympic Athletes in different Sports have changed over the years
-        </h3>
+        <h2 class='o2'>
+          <a id="Athletes">How physical characteristics of Olympic Athletes in different Sports have changed over 
+            the years</a>
+        </h2>
 
         <p>
           The bubble chart below, depicts the relationship between the average height, weight, and age of
@@ -80,9 +86,9 @@
 
     <div class="pure-u-1">
       <div id="text_map">
-        <h3>
-          Medals won by the athletes for their countries
-        </h3>
+        <h2 class='o3'>
+          <a id="Results">Medals won by the athletes for their countries</a>
+        </h2>
 
         <p>
           The map below shows the number of medals won by each country, normalised by the number of athletes from that
@@ -97,7 +103,9 @@
 
     <div class="pure-u-1-3">
       <div id="text_line">
-        <p>Lorem Ipsum4</p>
+        <h2 class='o5'>
+          <a id="Sports">Relationship of Weight, Height and Age to medals won by sport</a>
+        </h2>
         <p>Lorem Ipsum5</p>
       </div>
     </div>
@@ -108,31 +116,54 @@
 
     <div class="pure-u-1">
       <div id="text_conclusion">
-        <p>Conclusion</p>
+        <h2 class='o4'>Conclusion</h2>
+        <p>Conclusion stuff</p>
       </div>
     </div>
 
     <div class="pure-u-1">
       <div id="text_data">
-        <p>Data obtained from </p>
+        <p>
+          Data obtained from Kaggle: <a href="https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results">
+            120 years of Olympic histroy: athletes and results </a> by <a href="https://www.randigriffin.com/">
+            Randi H Griffin</a>.
+        </p>
       </div>"
     </div>
   </div>
 
+  <button onclick="BackToTop()" id="topbtn">Up</button>
+
 <script type="text/javascript">
+  topbtn = document.getElementById("topbtn");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 260 || document.documentElement.scrollTop > 260) {
+      topbtn.style.display = "block";
+    } else {
+      topbtn.style.display = "none";
+    }
+  }
+
+  function BackToTop() {
+    document.documentElement.scrollTop = 0;
+  }
+
+  vega.scheme('Tol_muted', ['#88ccee', '#44aa99', '#117733', '#332288', '#ddcc77', '#999933', '#cc6677', '#882255', '#aa4499', '#dddddd']);
+  vega.scheme('Tol_light', ['#bbcc33', '#aaaa00', '#77aadd', '#ee8866', '#ddcc77', '#eedd88', '#ffaabb', '#99ddff', '#44bb99', '#dddddd']);
 
   var bubble = "js/Info_bubble.vg.json";
-  vegaEmbed('#Info_bubble', bubble).then(function(result) {
+  vegaEmbed('#Info_bubble', bubble, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
   var choro = "js/Medals_choro.vg.json";
-  vegaEmbed('#Medals_choro', choro).then(function(result) {
+  vegaEmbed('#Medals_choro', choro, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
   var sport = "js/Sport_Medals.vg.json";
-  vegaEmbed('#Sport_medals', sport).then(function(result) {
+  vegaEmbed('#Sport_medals', sport, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>

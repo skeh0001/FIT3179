@@ -214,7 +214,8 @@
         "color": {
           "field": "Sport",
           "type": "nominal",
-          "legend": {"symbolLimit": 40, "columns": 2}
+          "legend": {"symbolLimit": 40, "columns": 2},
+          "scale": {"scheme": "Tol_muted"}
         },
         "opacity": {
             "condition": {"param": "sport_highlight", "value": 0.8},
@@ -401,5 +402,6 @@
       },
       "encoding": {"text": {"field": "text_annotation"},
     "opacity": {"value": 0.2}}
-    }]
+    }],
+    "config": {"background": "#e7e3d5"}
 }

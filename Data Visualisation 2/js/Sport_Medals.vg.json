@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "data/sport_medalsN.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/skeh0001/FIT3179/main/Data%20Visualisation%202/data/sport_medalsN.csv"},
     "params": [
         {
             "name": "sport_select",

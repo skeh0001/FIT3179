@@ -4,7 +4,7 @@
   "height": 600,
   "title": "Average Weight, Height, and Age of athletes in Olympic events from 1896 to 2016",
   "data": {
-    "url": "data/ave_sports.csv"
+    "url": "https://raw.githubusercontent.com/skeh0001/FIT3179/main/Data%20Visualisation%202/data/ave_sports.csv"
   },
   "params": [
     {
@@ -401,7 +401,7 @@
         "fontSize": 80
       },
       "encoding": {"text": {"field": "text_annotation"},
-    "opacity": {"value": 0.2}}
+    "opacity": {"value": 0.1}}
     }],
     "config": {"background": "#e7e3d5"}
 }

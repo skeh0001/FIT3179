@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "js/ne_110m_admin_0_countries.topojson",
+      "url": "https://raw.githubusercontent.com/skeh0001/FIT3179/main/Data%20Visualisation%202/js/ne_110m_admin_0_countries.topojson",
       "format": {
             "type": "topojson",
             "feature": "ne_110m_admin_0_countries"
@@ -29,7 +29,7 @@
                 "lookup": "properties.NAME",
                 "from": {
                   "data": {
-                    "url": "data/country_medals.csv"
+                    "url": "https://raw.githubusercontent.com/skeh0001/FIT3179/main/Data%20Visualisation%202/data/country_medals.csv"
                 },
                 "key": "Country",
                 "fields": ["Bronze", "Silver", "Gold", "Athletes"]
@@ -91,7 +91,7 @@
             "title": "Medals for each country over the years (shift + click on the map to select countries)",
             "width": "container",
             "height": 200,
-            "data": {"url": "data/country_medals_long.csv"},
+            "data": {"url": "https://raw.githubusercontent.com/skeh0001/FIT3179/main/Data%20Visualisation%202/data/country_medals_long.csv"},
             "transform": [
               {"filter": {"param": "brush"}},
               {"calculate": "if(datum.Medal == 'Bronze', 0, if(datum.Medal == 'Silver', 1, 2))",

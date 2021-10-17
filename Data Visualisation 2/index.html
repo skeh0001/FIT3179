@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 </head>
 <body>
@@ -43,21 +47,25 @@
 
         <p>
           The Olympics, otherwise known as the Olympic Games, are international sporting events that include both 
-          Summer and Winter sports. The first Olympic Games was held on 6 April 1896 in Athens, and the most recent
-          Olympic Games was the postponed 2020 Summer Olympics held on 23 July 2021 in Tokyo. <br><br>
-          Thousands of athletes from over 200 nations participate in the Olympics, which is typically held every 4
-          years, alternating between Summer and Winter Olympics every 2 years. Before the 1992 Olympic Games, they
-          were held every 4 years, with no distinction between Summer and Winter sports. <br><br>
-          Due to World War 1, there were no Olympic Games held between 1912 - 1920, and due to World War 2, there 
-          were no Olympic Games held between 1936 - 1948. 
+          <span class="summer">Summer</span> and <span class="winter">Winter</span> sports. The <b>first</b> Olympic Games was held on <b>6 April 1896</b> in <b>Athens</b>, and the <b>most recent</b>
+          Olympic Games was the postponed 2020 <span class="summer">Summer</span> Olympics held on <b>23 July 2021</b> in <b>Tokyo</b>. <br><br>
+          <b>Thousands</b> of athletes from <b>over 200 nations</b> participate in the Olympics, which is typically held <b>every 4
+          years</b>, alternating between <span class="summer">Summer</span> and <span class="winter">Winter</span> Olympics <b>every 2 years</b>. Before the 1992 Olympic Games, they
+          were held every 4 years, with no distinction between <span class="summer">Summer</span> and <span class="winter">Winter</span> sports. <br><br>
+          Due to <b>World War 1</b>, there were no Olympic Games held between <b>1912 - 1920</b>, and due to <b>World War 2</b>, there 
+          were no Olympic Games held between <b>1936 - 1948</b>. 
         </p>
 
         <p>
-          This visualisation will identify how the Weight, Height, and Age are distributed across different events
-          and sports, as well as visualise how these trends have developed over Olympic history. The number of
-          medals that a typical athlete from each Country wins in the Olympics can also be identified, along with
-          the total number of medals of each type won by each country. Lastly, the relationship between winning
-          each type of medal in each sport, against Weight, Height, and Age of athletes will be shown. 
+          This visualisation will identify how the <span class="height">height</span>, <span class="weight">weight</span>, and <span class="age">age</span> are distributed across different events
+          and sports, as well as <b>visualise</b> how these <b>trends</b> have developed over Olympic history. The <b>number of
+          medals</b> that a <b>typical athlete</b> from each country wins in the Olympics can also be identified, along with
+          the <b>total number of medals</b> of each type won by <b>each country</b>. Lastly, the <b>relationship</b> between winning
+          each type of <b>medal</b> in each sport, against <span class="height">height</span>, <span class="weight">weight</span>, and <span class="age">age</span> of athletes will be shown. 
+        </p>
+
+        <p>
+          The <b>title</b> of this page can be used to quickly navigate to relevant <b>sections</b>!
         </p>
       </div>
     </div>
@@ -65,17 +73,38 @@
     <div class="pure-u-1">
       <div id="text_bubble">
         <h2 class='o2'>
-          <a id="Athletes">How physical characteristics of Olympic Athletes in different Sports have changed over 
+          <a id="Athletes">How physical characteristics of Olympic athletes in different sports have changed over 
             the years</a>
         </h2>
 
         <p>
-          The bubble chart below, depicts the relationship between the average height, weight, and age of
+          The <b>bubble chart</b> below depicts the <b>relationship</b> between the average <span class="height">height</span>, <span class="weight">weight</span>, and <span class="age">age</span> of
           athletes in all Olympic events throughout the years.
         </p>
 
         <p>
+          In addition to the two <b>filters</b> below, the chart is <b>pannable</b> and <b>zoomable</b> (double click to reset), the items 
+          in the <b>legend</b> can also be clicked to <b>highlight</b> a particular sport. The <b>maximum and minimum</b> average <span class="weight">weight</span>, 
+          <span class="height">height</span>, and <span class="age">age</span> for athletes in each event has also been <b>annotated</b>.
+        </p>
 
+        <p>
+          In general, there appears to be a <b>linear relationship</b> between the average <span class="height">height</span> and average <span class="weight">weight</span>,
+          which indicates that athletes across most sports typically maintain a <b>healthy 
+          <a href="https://www.betterhealth.vic.gov.au/health/healthyliving/body-mass-index-bmi">BMI 
+          (Body Mass Index)</a></b>. <br><br>
+          In <span class="summer">Summer</span> Olympics, for each <span class="height">height</span>, the events with the average <b>heaviest</b> athletes 
+          are typically <b>Weightlifting</b> and <b>Wrestling</b>. While the events with the average <b>lightest</b> athletes are 
+          typically <b>Taekwondo</b> and <b>Gymnastics</b>. For each <span class="weight">weight</span>, the events with the average <b>tallest</b> athletes are 
+          typically <b>Basketball</b> and <b>Volleyball</b>. While the events with the average <b>shortest</b> athletes are typically 
+          <b>Weightlifting</b>. The events with average <b>oldest</b> athletes are typically <b>Equestrianism</b>. While the events with 
+          the average <b>youngest</b> athletes are typically <b>Gymnastics</b>. <br><br>
+          In <span class="winter">Winter</span> Olympics, for each <span class="height">height</span> the events with the average <b>heaviest</b> athletes are typically <b>Bobsleigh</b>. 
+          While the events with the average <b>lightest</b> athletes are typically <b>Figure Skating</b>. For each <span class="weight">weight</span>, the events with 
+          the average <b>tallest</b> athletes are typically <b>Bobsleigh</b> and <b>Ice Hockey</b>. While the events with the average 
+          <b>shortest</b> athletes are typically <b>Figure Skating</b>. The events with the average <b>oldest</b> athletes are typically 
+          <b>Curling</b>. While the events with the average <b>youngest</b> athletes are typically <b>Figure Skating</b>. <br><br>
+          These findings are very <b>consistent</b> over the years. 
         </p>
       </div>
     </div>
@@ -91,8 +120,24 @@
         </h2>
 
         <p>
-          The map below shows the number of medals won by each country, normalised by the number of athletes from that
-          country who attended the Olympic Games. 
+          The map below shows the number of <b>medals</b> won by each <b>country</b>, <b>normalised</b> by the number of <b>athletes</b> from 
+          that country who participated in the Olympic Games. <br><br>
+          There are <b>no data</b> for some countres, and those countries are <b>greyed out</b> on the map. <br><br>
+          As clearly shown, <b>Russia</b> has the <b>highest</b> proportion of medals per athlete, at 0.338. With the <b>United 
+          States of America behind</b> at 0.299. Interestingly, and perhaps surprisingly, particular <b>smaller countries</b> 
+          such as Pakistan, Germany, and Norway have a <b>higher</b> proportion of medals per athlete than <b>China</b> or 
+          <b>Australia</b>. 
+        </p>
+
+        <p>
+          The <b>map</b> can be used as a <b>filter</b> to select particular countries we may wish to compare raw medal counts 
+          with. <br><br>
+          By selecting and comparing the countries discussed earlier, it is obvious that the <b>United States of 
+          America</b> has won the <b>most</b> medals overall, having gained more <span class="gold">Gold</span>, <span class="silver">Silver</span>, and <span class="bronze">Bronze</span> medals than any other 
+          country. <b>Russia</b> is <b>second</b>, and <b>Germany</b> is following closely in <b>third</b> place. Though the 
+          <a href="https://www.worldometers.info/world-population/china-population/">population of <b>China</b></a> is more 
+          than <b>50 times</b> than <a href="https://www.worldometers.info/world-population/australia-population/">that of 
+            <b>Australia</b></a>, <b>Australia</b> has had both <b>more</b> athletes <b>participate</b>, and <b>more medals won</b> from the Olympic Games. 
         </p>
       </div>
     </div>
@@ -101,23 +146,49 @@
       <div id="Medals_choro"></div>
     </div>
 
+    <div class="pure-u-2-3">
+      <div id="Sport_medals"></div>
+    </div>
+
     <div class="pure-u-1-3">
       <div id="text_line">
         <h2 class='o5'>
-          <a id="Sports">Relationship of Weight, Height and Age to medals won by sport</a>
+          <a id="Sports">Relationship of <span class="height">height</span>, <span class="weight">weight</span> and <span class="age">age</span> to medals won by sport</a>
         </h2>
-        <p>Lorem Ipsum5</p>
+        <p>
+          The line charts on the left depict how each <b>physical characteristic</b> correlate to the number of <b>medals</b> of 
+          each <b>type</b> that are won from a particular sport over the entire 120 years period. <br><br>
+          <b>Hovering</b> over a particular line will <b>highlight</b> that medal type cross all 3 line charts. An <b>option to show</b> 
+          the number of athletes who <b>did not win any</b> medal is available, however that heavily overshadows 
+          the other 3 lines. <br><br>
+          Although most lines are <b>similar</b>, as can be seen in <b>Athletics</b>, while most <span class="bronze">Bronze</span> and <span class="silver">Silver</span> medals were 
+          won by athletes between <b>174 - 176 cm</b> tall, most <span class="gold">Gold</span> medals were won by athletes between <b>182 - 184 cm</b> 
+          tall. 
+        </p>
       </div>
-    </div>
-
-    <div class="pure-u-2-3">
-      <div id="Sport_medals"></div>
     </div>
 
     <div class="pure-u-1">
       <div id="text_conclusion">
         <h2 class='o4'>Conclusion</h2>
-        <p>Conclusion stuff</p>
+        <p>
+          Overall, many <b>interesting trends and information</b> could be drawn from 120 years of data in this 
+          international sporting event known as the Olympic Games. <br><br>
+          Through analysing the <b>relationship</b> of average <span class="height">height</span>, <span class="weight">weight</span>, and <span class="age">age</span> of athletes in Olympic events, 
+          there is clearly a <b>positive</b> relationship between average <span class="weight">weight</span> and <span class="height">height</span>, which suggests that all 
+          athletes across different sports <b>maintain a certain BMI</b>. <br><br>
+          <span class="summer">Summer</span> and <span class="winter">Winter</span> Olympics needed to be <b>analysed separately</b> as they cover different sports, but the 
+          sports with <b>minimum and maximum</b> average <b>physical characteristics</b> of athletes has remained <b>similar</b> 
+          throughout all 120 years of Olympic history. <br><br>
+          Through analysis of the map, the country with the <b>highest</b> proportion of medals per athlete was 
+          identified as <b>Russia</b>, and found that a few <b>small countries out-performed their larger rivals</b>. <br><br>
+          The bar chart allows the <b>total</b> raw medal count to be compared between <b>countries</b>, and it became clear that 
+          the <b>United States of America</b> had the <b>most overall</b> medals won, as well as <b>most</b> <span class="bronze">Bronze</span>, <span class="silver">Silver</span>, and <span class="gold">Gold</span> 
+          medals won <b>individually</b>. <br><br>
+          Lastly, the line charts allow us to identify <b>which range</b> of <span class="weight">weight</span>, <span class="height">height</span>, and <span class="age">age</span> in a particular sport 
+          leads to the <b>most</b> <span class="bronze">Bronze</span>, <span class="silver">Silver</span>, <span class="gold">Gold</span>, and no medals won. It also provides eye-opening information in 
+          identifying the <b>optimal physical characteristic range</b> to win <span class="gold">Gold</span>. 
+        </p>
       </div>
     </div>
 

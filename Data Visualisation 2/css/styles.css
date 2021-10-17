@@ -5,20 +5,25 @@ html, body {
 h1 {
     text-align: left;
     font-size: 42.6px;
+	font-family: 'Nunito', sans-serif;
 }
 
 h2 {
     text-align: left;
     font-size: 30px;
+	font-family: 'Nunito', sans-serif;
 }
 
 h3 {
     text-align: left;
     font-size: 20px;
+	font-family: 'Nunito', sans-serif;
 }
 
 p {
-    font-size: 16px;
+    text-align: left;
+	font-size: 20px;
+	font-family: 'Nunito', sans-serif;
 }
 
 .o1 {
@@ -39,6 +44,46 @@ p {
 
 .o5 {
 	color: #00a651;
+}
+
+.summer {
+	color: rgb(173, 172, 74);
+	font-weight: bold;
+}
+
+.winter {
+	color: rgb(109, 194, 223);
+	font-weight: bold;
+}
+
+.gold {
+	color: #FFD700;
+	font-weight: bold;
+}
+
+.silver {
+	color: #C0C0C0;
+	font-weight: bold;
+}
+
+.bronze {
+	color: #CD7F32;
+	font-weight: bold;
+}
+
+.weight {
+	color: #bbcc33;
+	font-weight: bold;
+}
+
+.height {
+	color: #ffaabb;
+	font-weight: bold;
+}
+
+.age {
+	color: #44bb99;
+	font-weight: bold;
 }
 
 #text_title {
@@ -99,13 +144,13 @@ p {
 #text_line {
 	margin-left: 100px;
 	margin-right: 100px;
-	text-align: left;
+	text-align: right;
 }
 
 #Sport_medals {
 	top: 0px;
 	bottom: 100px;
-	left: 0px;
+	left: 100px;
 	right: 100px;
 	width: 50vw;
 	margin-bottom: 50px;
@@ -135,9 +180,8 @@ p {
 	z-index: 99; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
-	/*background-color: #e7e3d5dc; /* Set a background color */
-	background: none;
-	color: rgb(184, 177, 177); /* Text color */
+	background-color: #c0b89bdc; /* Set a background color */
+	color: white; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 15px; /* Some padding */
 	border-radius: 10px; /* Rounded corners */

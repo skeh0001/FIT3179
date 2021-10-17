@@ -89,10 +89,10 @@
             }
         }
     ],
-    "hconcat": [
+    "vconcat": [
         {
             "title": "Medals won per sport by age",
-            "width": 400,
+            "width": "container",
             "height": 200,
             "params": [
                 {
@@ -131,7 +131,7 @@
         },
         {
             "title": "Medals won per sport by weight",
-            "width": 400,
+            "width": "container",
             "height": 200,
             "params": [
                 {
@@ -170,7 +170,7 @@
         },
         {
             "title": "Medals won per sport by height",
-            "width": 400,
+            "width": "container",
             "height": 200,
             "params": [
                 {

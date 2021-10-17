@@ -1,17 +1,105 @@
+html, body {
+    background-color: #e7e3d5;
+}
+
+h1 {
+    text-align: left;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+#text_title {
+    margin-left: 100px;
+    margin-right: 100px;
+	text-align: left;
+}
+
+#text_title h3 {
+	text-align: left;
+    font-size: 20px;
+}
+
+#img_title img {
+	margin-top: 30px;
+	width: 300px;
+}
+
+.pure-u-1 {
+    margin-top: 30px;
+}
+
+#text_intro {
+    margin-left: 100px;
+    margin-right: 100px;
+	text-align: left;
+}
+
+#text_bubble {
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: left;
+}
+
 #Info_bubble {
-	top:100px;
+	top: 0px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
+	width: 90vw;
+	margin-bottom: 100px;
+}
+
+#text_map {
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: left;
 }
 
 #Medals_choro {
-	top:100px;
+	top: 0px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
+	width: 73.9vw;
+	margin-bottom: 100px;
+}
+
+#text_line {
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: left;
+}
+
+#Sport_medals {
+	top: 0px;
+	bottom: 100px;
+	left: 100px;
+	right: 100px;
+	width: 50vw;
+	margin-bottom: 100px;
+}
+
+#text_conclusion {
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: left;
+}
+
+#text_data {
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: left;
 }

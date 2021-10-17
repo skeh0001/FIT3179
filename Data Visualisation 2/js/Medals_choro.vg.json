@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+      "url": "js/ne_110m_admin_0_countries.topojson",
       "format": {
             "type": "topojson",
             "feature": "ne_110m_admin_0_countries"
@@ -10,11 +10,11 @@
     "vconcat": [
       {
        "title": "Medals per athlete by Country",
-        "width": 1000,
-        "height": 600,
+        "width": "container",
+        "height": 480,
         "projection": {
           "type": "equirectangular",
-          "rotate": [-120, 0, 0]
+          "rotate": [-150, 0, 0]
         },
         "layer": [
           {
@@ -29,7 +29,7 @@
                 "lookup": "properties.NAME",
                 "from": {
                   "data": {
-                    "url": "https://raw.githubusercontent.com/skeh0001/FIT3179/main/country_medals.csv"
+                    "url": "data/country_medals.csv"
                 },
                 "key": "Country",
                 "fields": ["Bronze", "Silver", "Gold", "Athletes"]
@@ -57,7 +57,7 @@
               "color": {
                 "field": "Medal Proportion",
                 "type": "quantitative",
-                "scale": {"scheme": "blues"}
+                "scale": {"scheme": "viridis"}
               },
               "stroke": {
                 "condition": {
@@ -89,13 +89,18 @@
       },
         {
             "title": "Medals for each country over the years (shift + click on the map to select countries)",
-            "width": 1000,
+            "width": "container",
             "height": 200,
-            "data": {"url": "https://raw.githubusercontent.com/skeh0001/FIT3179/main/country_medals_long.csv"},
+            "data": {"url": "data/country_medals_long.csv"},
             "transform": [
-              {"filter": {"param": "brush"}}
+              {"filter": {"param": "brush"}},
+              {"calculate": "if(datum.Medal == 'Bronze', 0, if(datum.Medal == 'Silver', 1, 2))",
+               "as": "MedalOrder"}
             ],
-            "mark": "bar",
+            "mark": {
+                "type": "bar",
+                "cornerRadiusEnd": 10
+            },
             "encoding": {
               "x": {"aggregate": "sum", "field": "Count", "title": "Total Medals"},
               "y": {"field": "Country"},
@@ -107,6 +112,7 @@
                   "range": ["#CD7F32", "#C0C0C0", "#FFD700"]
                 }
               },
+              "order": {"field": "MedalOrder"},
               "tooltip": [
                 {"field": "Country"},
                 {"field": "Medal"},

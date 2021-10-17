@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1000,
+  "width": "container",
   "height": 600,
-  "title": "Average Weight, Height, and Age of atheletes in Olympic events from 1896 to 2016",
+  "title": "Average Weight, Height, and Age of athletes in Olympic events from 1896 to 2016",
   "data": {
     "url": "data/ave_sports.csv"
   },
@@ -169,6 +169,7 @@
     {"filter": "sport_select == null || datum.Sport == sport_select"},
     {"calculate": "parseInt(datum.Weight)", "as": "Weight"}
   ],
+  "layer": [{
   "encoding": {
     "x": {
       "field": "Height",
@@ -205,14 +206,15 @@
           "scale": {
             "type": "threshold",
             "domain": [15, 20, 25, 30, 35],
-            "range": [25, 50, 150, 300, 450, 600]
+            "range": [25, 50, 150, 300, 600, 1200]
           },
           "legend": {"format": ".2s"},
           "title": "Average Age"
         },
         "color": {
           "field": "Sport",
-          "type": "nominal"
+          "type": "nominal",
+          "legend": {"symbolLimit": 40, "columns": 2}
         },
         "opacity": {
             "condition": {"param": "sport_highlight", "value": 0.8},
@@ -221,10 +223,9 @@
         "tooltip": [
           {"field": "Event", "type": "nominal"},
           {"field": "Sport", "type": "nominal"},
-          {"field": "Height", "type": "quantitative", "format": ".3s"},
-          {"field": "Weight", "type": "quantitative", "format": ".3s"},
-          {"field": "Age", "type": "quantitative", "format": ".3s"},
-          {"field": "City", "type": "nominal"}
+          {"field": "Height", "type": "quantitative", "format": ".3s", "title": "Average Height"},
+          {"field": "Weight", "type": "quantitative", "format": ".3s", "title": "Average Weight"},
+          {"field": "Age", "type": "quantitative", "format": ".3s", "title": "Average Age"}
         ]
       }
     },
@@ -235,19 +236,50 @@
           "sort": [{"field": "Height", "order": "descending"}]
         },
       {"filter": "datum.ranking == 1"},
-      {"calculate": "'Event with Average Tallest Athletes in ' + datum['Year'] + ': ' + round(datum['Height']) + ' cm'",
+      {"calculate": "'Event with Average Tallest Athletes: ' + round(datum['Height']) + ' cm'",
         "as": "text_annotation"
         }
       ],
       "mark": {
         "type": "text", 
         "align": "center", 
-        "baseline": "middle",
+        "baseline": "top",
         "dx": -12,
+        "dy": 12,
         "fontSize": 11.5,
         "fontStyle": "italic"
       },
-      "encoding": {"text": {"field": "text_annotation"}}
+      "encoding": {"text": {"field": "text_annotation"}, 
+        "opacity": {
+        "condition": {"param": "sport_highlight", "value": 1},
+        "value": 0.15
+      }}
+    },
+    {
+      "transform": [
+        {
+          "window": [{"op": "rank", "as": "ranking"}],
+          "sort": [{"field": "Height", "order": "ascending"}]
+        },
+      {"filter": "datum.ranking == 1"},
+      {"calculate": "'Event with Average Shortest Athletes: ' + round(datum['Height']) + ' cm'",
+        "as": "text_annotation"
+        }
+      ],
+      "mark": {
+        "type": "text", 
+        "align": "center", 
+        "baseline": "top",
+        "dx": -12,
+        "dy": 12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {"text": {"field": "text_annotation"}, 
+        "opacity": {
+        "condition": {"param": "sport_highlight", "value": 1},
+        "value": 0.15
+      }}
     },
     {
       "transform": [
@@ -256,7 +288,7 @@
           "sort": [{"field": "Weight", "order": "descending"}]
         },
       {"filter": "datum.ranking == 1"},
-      {"calculate": "'Event with Average Heaviest Athletes in ' + datum['Year'] + ': ' + round(datum['Weight']) + ' kg'",
+      {"calculate": "'Event with Average Heaviest Athletes: ' + round(datum['Weight']) + ' kg'",
         "as": "text_annotation"
         }
       ],
@@ -268,7 +300,36 @@
         "fontSize": 11.5,
         "fontStyle": "italic"
       },
-      "encoding": {"text": {"field": "text_annotation"}}
+      "encoding": {"text": {"field": "text_annotation"}, 
+        "opacity": {
+        "condition": {"param": "sport_highlight", "value": 1},
+        "value": 0.15
+      }}
+    },
+    {
+      "transform": [
+        {
+          "window": [{"op": "rank", "as": "ranking"}],
+          "sort": [{"field": "Weight", "order": "ascending"}]
+        },
+      {"filter": "datum.ranking == 1"},
+      {"calculate": "'Event with Average Lightest Athletes: ' + round(datum['Weight']) + ' kg'",
+        "as": "text_annotation"
+        }
+      ],
+      "mark": {
+        "type": "text", 
+        "align": "center", 
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {"text": {"field": "text_annotation"}, 
+        "opacity": {
+        "condition": {"param": "sport_highlight", "value": 1},
+        "value": 0.15
+      }}
     },
     {
       "transform": [
@@ -277,19 +338,68 @@
           "sort": [{"field": "Age", "order": "descending"}]
         },
       {"filter": "datum.ranking == 1"},
-      {"calculate": "'Event with Average Oldest Athletes in ' + datum['Year'] + ': ' + round(datum['Age']) + ' years old'",
+      {"calculate": "'Event with Average Oldest Athletes: ' + round(datum['Age']) + ' years old'",
         "as": "text_annotation"
         }
       ],
       "mark": {
         "type": "text", 
         "align": "center", 
-        "baseline": "middle",
+        "baseline": "bottom",
         "dx": -12,
+        "dy": -12,
         "fontSize": 11.5,
         "fontStyle": "italic"
       },
-      "encoding": {"text": {"field": "text_annotation"}}
+      "encoding": {"text": {"field": "text_annotation"}, 
+        "opacity": {
+        "condition": {"param": "sport_highlight", "value": 1},
+        "value": 0.15
+      }}
+    },
+    {
+      "transform": [
+        {
+          "window": [{"op": "rank", "as": "ranking"}],
+          "sort": [{"field": "Age", "order": "ascending"}]
+        },
+      {"filter": "datum.ranking == 1"},
+      {"calculate": "'Event with Average Youngest Athletes: ' + round(datum['Age']) + ' years old'",
+        "as": "text_annotation"
+        }
+      ],
+      "mark": {
+        "type": "text", 
+        "align": "center", 
+        "baseline": "bottom",
+        "dx": -12,
+        "dy": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {"text": {"field": "text_annotation"}, 
+        "opacity": {
+        "condition": {"param": "sport_highlight", "value": 1},
+        "value": 0.15
+      }}
     }
   ]
+ },
+ {
+      "transform": [
+        {"calculate": "datum.Year + ' in ' + datum.City", "as": "text_annotation"},
+        {
+          "window": [{"op": "rank", "as": "ranking"}],
+          "sort": [{"field": "Age", "order": "descending"}]
+        },
+      {"filter": "datum.ranking == 1"}
+      ],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "fontSize": 80
+      },
+      "encoding": {"text": {"field": "text_annotation"},
+    "opacity": {"value": 0.2}}
+    }]
 }
